@@ -42,15 +42,12 @@ const Login = () => {
                     </div>
 
                     <div className="input-group mb-3 mt-5">
-                        <input type="text" className="form-control" placeholder="Email"
+                        <input type="text" className="form-control" placeholder="Email or Login"
                                aria-label="Email" aria-describedby="basic-addon2"
                                onChange={(e) =>
                                    setLogin(e.target.value)}
                                value={login}
                         />
-                        <div className="input-group-append">
-                            <span className="input-group-text" id="basic-addon2">@example.com</span>
-                        </div>
                     </div>
 
                     <div className="input-group mb-5">

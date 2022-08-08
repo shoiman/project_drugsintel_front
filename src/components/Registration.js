@@ -17,7 +17,6 @@ const Registration = () => {
 
     const history = useNavigate();
     const dispatch = useDispatch();
-    //const m = useSelector(state => state.message)
 
     const addCustomer = (dataName, dataEmail, dataPassword) => {
         const customer = {
@@ -57,9 +56,6 @@ const Registration = () => {
             <div className="container">
                 <div className="row offset-3 col-6">
                     <div className="input-group mb-3 mt-5">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text" id="basic-addon1">@</span>
-                        </div>
                         <input type="text" className="form-control" placeholder="Username" aria-label="Username"
                                aria-describedby="basic-addon1"
                                onChange={(e) => {
@@ -74,10 +70,6 @@ const Registration = () => {
                                onChange={(e) =>
                                    setDataEmail(e.target.value)}
                         />
-
-                        <div className="input-group-append">
-                            <span className="input-group-text" id="basic-addon2">@example.com</span>
-                        </div>
                     </div>
 
                     <div className="input-group mb-5">
