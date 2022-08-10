@@ -73,7 +73,7 @@ const Registration = () => {
                     </div>
 
                     <div className="input-group mb-5">
-                        <input type="text" className="form-control" placeholder="Password"
+                        <input type="password" className="form-control" placeholder="Password"
                                aria-label="Password" aria-describedby="basic-addon2"
                                onChange={(e) =>
                                    setDataPassword(e.target.value)}
@@ -90,7 +90,7 @@ const Registration = () => {
             </div>
 
             <div>
-                <button className="btn btn-outline-primary mb-3 mt-5"
+                <button className="btn btn-outline-primary mb-3 mt-3"
                         onClick={() => {
                             checkRequest()
                         }}
