@@ -53,8 +53,8 @@ const Registration = () => {
 
     return (
         <div>
-            <div className="container">
-                <div className="row offset-3 col-6">
+            <div className="d-flex justify-content-sm-around">
+                <div >
                     <div className="input-group mb-3 mt-5">
                         <input type="text" className="form-control" placeholder="Username" aria-label="Username"
                                aria-describedby="basic-addon1"

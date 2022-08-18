@@ -42,8 +42,15 @@ const Login = () => {
 
     return (
         <div>
-            <div className="container">
-                <div className="row offset-3 col-6">
+            <div className="d-flex justify-content-sm-around">
+
+
+
+                <div >
+
+                    <div>
+                        {isLoading ? <LoadingSpinner/> : console.log("hi")}
+                    </div>
 
                     <div className="input-group mb-3 mt-5">
                         <input type="text" className="form-control" placeholder="Email or Login"
@@ -65,7 +72,7 @@ const Login = () => {
                 </div>
             </div>
 
-            <div className="row offset-5 col-2">
+            <div >
                 <div>
                     <button className="btn btn-outline-primary mb-3"
                             onClick={() => {
@@ -82,10 +89,6 @@ const Login = () => {
                                 history('/registration')
                             }}>Sign up
                     </button>
-                </div>
-
-                <div>
-                    {isLoading ? <LoadingSpinner/> : console.log("hi")}
                 </div>
 
                 <div className="mt-5">

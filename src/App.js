@@ -5,6 +5,8 @@ import Registration from "./components/Registration";
 import Home from "./components/Home";
 import React from "react";
 import Main from "./components/Main";
+import MessagePage from "./components/MessagePage";
+import MyProfile from "./components/MyProfile";
 
 function App() {
 
@@ -24,6 +26,12 @@ function App() {
 
               <Route path={'/home'}
                      element={<Home/>}/>
+
+              <Route path={'/messages'}
+                     element={<MessagePage/>}/>
+
+              <Route path={'/profile'}
+                     element={<MyProfile/>}/>
 
           </Routes>
       </div>
